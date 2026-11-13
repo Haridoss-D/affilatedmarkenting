@@ -1,0 +1,9 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Dashboard | AffiliatePro</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/responsive.css"><link rel="stylesheet" href="css/animations.css"><link rel="stylesheet" href="css/dashboard.css"></head>
+<body data-guard="user"><div id="nav"></div><section><div class="wrap"><h1>My <span class="grad">Dashboard</span></h1><p id="note" style="color:var(--m)"></p>
+<div class="dash-grid"><div class="glass stat"><b id="tc">0</b><span>Total clicks</span></div><div class="glass stat"><b id="vc">0</b><span>Verified conversions</span></div><div class="glass stat"><b id="ae">0</b><span>Approved earnings</span></div><div class="glass stat"><b id="pe">0</b><span>Pending earnings</span></div><div class="glass stat"><b id="ab">0</b><span>Available balance</span></div></div>
+<div class="charts"><div class="glass"><canvas id="c1"></canvas></div><div class="glass"><canvas id="c2"></canvas></div></div>
+<div class="charts" style="margin-top:20px"><div class="glass"><h3>Recent activity</h3><div id="recent"></div></div><div class="glass"><h3>Favorite products</h3><div id="favs"></div></div></div>
+<div class="glass scroll" style="margin-top:20px"><h3>Affiliate link performance</h3><table><tr><th>Product</th><th>Clicks</th><th>Conv.</th><th>Link</th></tr><tbody id="links"></tbody></table></div></div></section><div id="footer"></div>
+<script src="js/api.js"></script><script src="js/auth.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script><script src="js/dashboard.js"></script><script src="js/main.js"></script></body></html>
