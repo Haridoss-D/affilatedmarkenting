@@ -1,5 +1,37 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Contact | AffiliatePro</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/responsive.css"><link rel="stylesheet" href="css/animations.css"></head>
-<body ><div id="nav"></div><section><div class="wrap"><div class="sec-h"><h1 class="grad">Contact</h1></div><form class="glass form" onsubmit="event.preventDefault();api('/contact',{method:'POST',body:Object.fromEntries(new FormData(this))}).then(()=>{alert('Sent');this.reset()}).catch(e=>alert(e.message))"><input name="name" placeholder="Name" required><input name="email" type="email" placeholder="Email" required><textarea name="message" rows="5" placeholder="Message" required></textarea><button class="btn">Send</button></form></div></section><div id="footer"></div>
-<script src="js/api.js"></script><script src="js/auth.js"></script><script src="js/main.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Contact | AffiliatePro</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body>
+    <div id="nav"></div>
+    <section>
+        <div class="wrap">
+            <div class="sec-h">
+                <h1 class="grad">Contact</h1>
+            </div>
+            <form class="glass form"
+                onsubmit="event.preventDefault();api('/contact',{method:'POST',body:Object.fromEntries(new FormData(this))}).then(()=>{alert('Sent');this.reset()}).catch(e=>alert(e.message))">
+                <input name="name" placeholder="Name" required><input name="email" type="email" placeholder="Email"
+                    required><textarea name="message" rows="5" placeholder="Message" required></textarea><button
+                    class="btn">Send</button>
+            </form>
+        </div>
+    </section>
+    <div id="footer"></div>
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

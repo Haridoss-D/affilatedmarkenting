@@ -1,15 +1,159 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Home | AffiliatePro</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/responsive.css"><link rel="stylesheet" href="css/animations.css"></head>
-<body ><div id="nav"></div><section class="hero"><div class="wrap"><div><h1>Affiliate Marketing<br><span>Made Simple!</span></h1><p>Discover top products, share your unique link,<br>and <em>earn commissions</em> effortlessly!</p><div class="cta"><a class="btn glow" href="register.html">🚀 Start Earning Today →</a><a class="btn ghost" href="#how">▶ Watch Video</a></div><div class="trusted"><span class="st">★★★★★</span> Verified tracking · Real conversions only</div></div>
-<div class="stage"><span class="deco rk">🚀</span><span class="deco cr">👑</span><span class="coin c1">₹</span><span class="coin c2">₹</span><span class="coin c3">₹</span><span class="deco mg">📣</span><span class="deco gf float">🎁</span>
-<img class="char" src="assets/images/hero-character.png" alt="" onerror="this.remove()">
-<div class="phone float"><small>Total Earnings</small><b>₹48,750</b><em>↑ +32%</em><div class="bars"><i style="height:25%"></i><i style="height:40%"></i><i style="height:55%"></i><i style="height:75%"></i><i style="height:100%"></i></div><div class="sample">Illustrative preview</div></div></div></div>
-<div class="wrap"><div class="trust"><div><span class="i">🛡️</span><span><b>Trusted &amp; Secure</b><small>Your data is safe</small></span></div><div><span class="i">⚡</span><span><b>High Commission</b><small>Competitive rates</small></span></div><div><span class="i">📊</span><span><b>Real-Time Analytics</b><small>Track your earnings</small></span></div><div><span class="i">🎧</span><span><b>24/7 Support</b><small>We're here to help</small></span></div></div></div></section>
-<section id="how"><div class="wrap"><h2 class="ttl" style="justify-content:center">How It Works</h2><p class="sub">Start earning in <em>3 simple steps</em></p><div class="steps"><div class="step reveal"><span class="n">1</span><div class="e">👤➕</div><h3>Join Our Platform</h3><p>Create your free account in seconds.</p></div><span class="ar">→</span><div class="step reveal"><span class="n">2</span><div class="e">🔗</div><h3>Share the Link</h3><p>Promote it on your website, social media or anywhere.</p></div><span class="ar">→</span><div class="step reveal"><span class="n">3</span><div class="e">💰</div><h3>Earn Commissions</h3><p>Get paid for every verified purchase through your link.</p></div></div></div></section>
-<section><div class="wrap"><div class="dealhead"><span></span><div><h2 class="ttl" style="justify-content:center">Top Deals</h2><p class="sub" style="margin:0">Handpicked products with the best offers</p></div><a class="btn ghost sm" href="deals.html">View All Deals →</a></div><div class="grid" id="deals"></div></div></section>
-<section><div class="wrap"><div class="sec-h"><h2>Categories</h2></div><div class="grid"><a class="glass card reveal" href="products.html"><div class="ico">💻</div><h3>Software</h3></a><a class="glass card reveal" href="products.html"><div class="ico">🎧</div><h3>Electronics</h3></a><a class="glass card reveal" href="products.html"><div class="ico">🎓</div><h3>Education</h3></a><a class="glass card reveal" href="products.html"><div class="ico">🏠</div><h3>Home</h3></a></div></div></section>
-<section><div class="wrap"><div class="sec-h"><h2>Testimonials</h2></div><div class="grid"><div class="glass card reveal"><p>“Clean dashboard and clear tracking.”</p><h3>Priya S.</h3></div><div class="glass card reveal"><p>“Love that earnings are verified.”</p><h3>Marcus L.</h3></div><div class="glass card reveal"><p>“Great deals to promote.”</p><h3>Aiko T.</h3></div></div></div></section>
-<section><div class="wrap faq" style="max-width:760px"><div class="sec-h"><h2>FAQ</h2></div><details class="glass"><summary>Is it free to join?</summary><p>Yes, registration is free.</p></details><details class="glass"><summary>When do I earn?</summary><p>Only after the affiliate network confirms a conversion.</p></details><details class="glass"><summary>How do I get paid?</summary><p>Approved earnings move to your available balance.</p></details></div></section>
-<section><div class="wrap sec-h"><h2>Newsletter</h2><p>Weekly deals, no spam.</p><form class="news" id="newsletter"><input type="email" required placeholder="you@email.com"><button class="btn">Subscribe</button></form></div></section><div id="footer"></div>
-<script src="js/api.js"></script><script src="js/auth.js"></script><script src="js/products.js"></script><script>initHome()</script><script src="js/main.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Home | AffiliatePro</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body>
+    <div id="nav"></div>
+    <section class="hero">
+        <div class="wrap">
+            <div>
+                <h1>Affiliate Marketing<br><span>Made Simple!</span></h1>
+                <p>Discover top products, share your unique link,<br>and <em>earn commissions</em> effortlessly!</p>
+                <div class="cta"><a class="btn glow" href="register.html">🚀 Start Earning Today →</a><a
+                        class="btn ghost" href="#how">▶ Watch Video</a></div>
+                <div class="trusted"><span class="st">★★★★★</span> Verified tracking · Real conversions only</div>
+            </div>
+            <div class="stage"><span class="deco rk">🚀</span><span class="deco cr">👑</span><span
+                    class="coin c1">₹</span><span class="coin c2">₹</span><span class="coin c3">₹</span><span
+                    class="deco mg">📣</span><span class="deco gf float">🎁</span>
+                <img class="char" src="assets/images/hero-character.png" alt="" onerror="this.remove()">
+                <div class="phone float"><small>Total Earnings</small><b>₹48,750</b><em>↑ +32%</em>
+                    <div class="bars"><i style="height:25%"></i><i style="height:40%"></i><i style="height:55%"></i><i
+                            style="height:75%"></i><i style="height:100%"></i></div>
+                    <div class="sample">Illustrative preview</div>
+                </div>
+            </div>
+        </div>
+        <div class="wrap">
+            <div class="trust">
+                <div><span class="i">🛡️</span><span><b>Trusted &amp; Secure</b><small>Your data is safe</small></span>
+                </div>
+                <div><span class="i">⚡</span><span><b>High Commission</b><small>Competitive rates</small></span></div>
+                <div><span class="i">📊</span><span><b>Real-Time Analytics</b><small>Track your earnings</small></span>
+                </div>
+                <div><span class="i">🎧</span><span><b>24/7 Support</b><small>We're here to help</small></span></div>
+            </div>
+        </div>
+    </section>
+    <section id="how">
+        <div class="wrap">
+            <h2 class="ttl" style="justify-content:center">How It Works</h2>
+            <p class="sub">Start earning in <em>3 simple steps</em></p>
+            <div class="steps">
+                <div class="step reveal"><span class="n">1</span>
+                    <div class="e">👤➕</div>
+                    <h3>Join Our Platform</h3>
+                    <p>Create your free account in seconds.</p>
+                </div><span class="ar">→</span>
+                <div class="step reveal"><span class="n">2</span>
+                    <div class="e">🔗</div>
+                    <h3>Share the Link</h3>
+                    <p>Promote it on your website, social media or anywhere.</p>
+                </div><span class="ar">→</span>
+                <div class="step reveal"><span class="n">3</span>
+                    <div class="e">💰</div>
+                    <h3>Earn Commissions</h3>
+                    <p>Get paid for every verified purchase through your link.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="wrap">
+            <div class="dealhead"><span></span>
+                <div>
+                    <h2 class="ttl" style="justify-content:center">Top Deals</h2>
+                    <p class="sub" style="margin:0">Handpicked products with the best offers</p>
+                </div><a class="btn ghost sm" href="deals.html">View All Deals →</a>
+            </div>
+            <div class="grid" id="deals"></div>
+        </div>
+    </section>
+    <section>
+        <div class="wrap">
+            <div class="sec-h">
+                <h2>Categories</h2>
+            </div>
+            <div class="grid"><a class="glass card reveal" href="products.html">
+                    <div class="ico">💻</div>
+                    <h3>Software</h3>
+                </a><a class="glass card reveal" href="products.html">
+                    <div class="ico">🎧</div>
+                    <h3>Electronics</h3>
+                </a><a class="glass card reveal" href="products.html">
+                    <div class="ico">🎓</div>
+                    <h3>Education</h3>
+                </a><a class="glass card reveal" href="products.html">
+                    <div class="ico">🏠</div>
+                    <h3>Home</h3>
+                </a></div>
+        </div>
+    </section>
+    <section>
+        <div class="wrap">
+            <div class="sec-h">
+                <h2>Testimonials</h2>
+            </div>
+            <div class="grid">
+                <div class="glass card reveal">
+                    <p>“Clean dashboard and clear tracking.”</p>
+                    <h3>Priya S.</h3>
+                </div>
+                <div class="glass card reveal">
+                    <p>“Love that earnings are verified.”</p>
+                    <h3>Marcus L.</h3>
+                </div>
+                <div class="glass card reveal">
+                    <p>“Great deals to promote.”</p>
+                    <h3>Aiko T.</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="wrap faq" style="max-width:760px">
+            <div class="sec-h">
+                <h2>FAQ</h2>
+            </div>
+            <details class="glass">
+                <summary>Is it free to join?</summary>
+                <p>Yes, registration is free.</p>
+            </details>
+            <details class="glass">
+                <summary>When do I earn?</summary>
+                <p>Only after the affiliate network confirms a conversion.</p>
+            </details>
+            <details class="glass">
+                <summary>How do I get paid?</summary>
+                <p>Approved earnings move to your available balance.</p>
+            </details>
+        </div>
+    </section>
+    <section>
+        <div class="wrap sec-h">
+            <h2>Newsletter</h2>
+            <p>Weekly deals, no spam.</p>
+            <form class="news" id="newsletter"><input type="email" required placeholder="you@email.com"><button
+                    class="btn">Subscribe</button></form>
+        </div>
+    </section>
+    <div id="footer"></div>
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/products.js"></script>
+    <script>initHome()</script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
